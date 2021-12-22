@@ -21,14 +21,14 @@ body {
 
 .about {
   position: relative;
-  top: 3vw;
+  top: 10vh;
   margin: 2vh 20vh 0vh 20vh;
   width: 70%;
   height: 90vh;
   padding: 0vh 5vh 0vh 5vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .about h1 {
@@ -49,20 +49,23 @@ body {
 }
 
 .button-wrapper {
-  margin-top: 70px;
+  /* margin-top: 70px; */
   padding: 2vh;
   display: flex;
   justify-content: center;
-  margin-bottom: 150px;
+  /* margin-bottom: 150px; */
 }
 
 button {
   background-color: transparent;
   display: block;
   width: auto;
-  height: 8vh;
-  font-size: 2vw;
-  padding: 30px;
+  height: auto;
+  font-size: 3vh;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   color: #518f7e;
   font-weight: 400;
   border: 2px solid #518f7e;
@@ -85,7 +88,7 @@ button:hover {
 
 .arrow-wrapper {
   position: relative;
-
+  margin: 5vh;
   cursor: pointer;
   margin-bottom: 20vh;
 }
@@ -131,7 +134,7 @@ button:hover {
 }
 
 .projects-header {
-  padding: 6vh 0vh 0vh 0vh;
+  /* padding: 6vh 0vh 0vh 0vh; */
   height: 12vh;
   background-color: #417265;
   width: 100%;
@@ -168,7 +171,7 @@ button:hover {
 .project-box {
   width: 500px;
   margin: 20px;
-  height: 500px;
+  height: auto;
   display: flex;
   flex-direction: column;
 }
@@ -227,7 +230,7 @@ button:hover {
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   background-color: white;
 }
 
@@ -247,7 +250,8 @@ button:hover {
 }
 
 .contact p {
-  font-size: 2vh;
+  font-size: 3vh;
+  padding-bottom: 5vh;
   color: #839993;
 }
 
@@ -286,7 +290,7 @@ nav {
 .nav-links a {
   color: rgb(225, 225, 225);
   text-decoration: none;
-  font-size: 17px;
+  font-size: 2vh;
   padding: 10px;
   transition: all 0.1s ease-out;
 }
@@ -326,11 +330,53 @@ nav {
     overflow-x: hidden;
   }
   .about {
-    width: 90%;
+    width: 100%;
+    top: 4vh;
   }
 
-  .about button {
-    font-size: 4vw;
+  button {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+
+  .projects {
+    width: 100%;
+  }
+
+  .projects-header h1 {
+    font-size: 20px;
+  }
+  .project-box {
+    width: 500px;
+    margin: 20px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project-box h3 {
+    color: rgb(240, 240, 240);
+    font-weight: 600;
+  }
+
+  .project {
+    height: 100%;
+    width: 100%;
+    background-color: #26423b;
+    border: 3px #26423b solid;
+    border-radius: 5px;
+  }
+
+  .project img {
+    width: 100%;
+    height: 250px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .arrow-wrapper {
+    margin-top: 7vh;
   }
 
   .nav-links {
@@ -375,16 +421,36 @@ nav {
     display: block;
   }
   .about h1 {
-    font-size: 6vw;
+    font-size: 30px;
   }
   .about h3 {
-    font-size: 4vw;
+    font-size: 20px;
   }
   .about p {
-    font-size: 3.6vw;
+    font-size: 20px;
   }
+
+  .contact-header {
+    font-size: 20px;
+    color: #518f7e;
+    margin-top: 50px;
+    margin-bottom: 0px;
+  }
+
   .contact {
-    width: 40vw;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+  }
+
+  .contact p {
+    font-size: 20px;
+    padding-bottom: 5vh;
+    color: #839993;
   }
 }
 
