@@ -6,10 +6,12 @@
 }
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   overflow-x: hidden;
+  position: relative;
 }
 .main {
   background-color: white;
